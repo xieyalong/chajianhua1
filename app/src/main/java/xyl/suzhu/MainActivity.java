@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         BiaoZhunManger.getInstance().setContext(this);
+        //chajianapk-debug.apk放在根目录
         String apkPath=Environment.getExternalStorageDirectory().getAbsolutePath()+"/chajianapk-debug.apk";
 //        String apkPath=Environment.getExternalStorageDirectory().getAbsolutePath()+"/com.ayansoft.androphp_3.apk";
         BiaoZhunManger.getInstance().loadPath(apkPath);
